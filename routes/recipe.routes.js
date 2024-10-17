@@ -8,7 +8,9 @@ router.post("/", async (req, res, next) => {
   try {
     await Recipe.create({
       name: req.body.name,
+      image: req.body.image,
       createdBy: req.body.createdBy,
+      creationDate: req.body.creationDate,
       ingredients: req.body.ingredients,
       type: req.body.type,
       isVegan: req.body.isVegan,
@@ -77,7 +79,9 @@ router.put("/:recipeId", async (req, res, next) => {
   try {
     await Recipe.findByIdAndUpdate(req.params.recipeId, {
       name: req.body.name,
+      image: req.body.image,
       createdBy: req.body.createdBy,
+      creationDate: req.body.creationDate,
       ingredients: req.body.ingredients,
       type: req.body.type,
       isVegan: req.body.isVegan,
