@@ -9,7 +9,7 @@ const recipeSchema = new Schema({
 	createdBy: { type: Schema.Types.ObjectId, ref: "User" },
 	creationDate: {type: Date, default: Date.now},
 	ingredients: [{
-		ingredient: { type: Schema.Types.ObjectId, ref: "Ingredient" },
+		name: { type: Schema.Types.ObjectId, ref: "Ingredient" },
 		measure: { type: String, required: true, enum: measures },
 		quantity: { type: Number, required: true, min: 0 }	
 	}],
