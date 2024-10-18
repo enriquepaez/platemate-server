@@ -5,11 +5,11 @@ const meals = ["Breakfast", "Lunch", "Dinner", "Any"]
 
 const recipeSchema = new Schema({
   name: { type: String, required: true, unique: true },
-	image: {type: String, default: "../assets/no-image.svg"},
+	image: String,
 	createdBy: { type: Schema.Types.ObjectId, ref: "User" },
 	creationDate: {type: Date, default: Date.now},
 	ingredients: [{
-		name: { type: Schema.Types.ObjectId, ref: "Ingredient" },
+		ingredient: { type: Schema.Types.ObjectId, ref: "Ingredient", required: true },
 		measure: { type: String, required: true, enum: measures },
 		quantity: { type: Number, required: true, min: 0 }	
 	}],
