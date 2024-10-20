@@ -1,0 +1,212 @@
+[
+  {
+    "name": "Vegan Avocado Toast",
+    "image": "https://www.loveandlemons.com/wp-content/uploads/2020/08/avocado-toast.jpg",
+    "createdBy": "603c9aeaf1b8b12b8c4a22a4",
+    "ingredients": [
+      { "ingredient": "670f97ad132b8078e8c1c6b9", "measure": "piece", "quantity": 2 },
+      { "ingredient": "670f97ad132b8078e8c1c63e", "measure": "tablespoon", "quantity": 1 }
+    ],
+    "type": "Breakfast",
+    "isVegan": true,
+    "isVegetarian": true,
+    "instructions": "Toast the bread, smash avocado, and spread on top. Add olive oil, salt, and pepper."
+  },
+  {
+    "name": "Spaghetti Carbonara",
+    "image": "https://www.simplyrecipes.com/thmb/8rH1RPYZSBVt3Km91-WHrjIfF7g=/2000x1125/smart/filters:no_upscale()/Simply-Recipes-Spaghetti-Carbonara-LEAD-3-a4e484f759a84849a8bd4c77b657d6ea.jpg",
+    "createdBy": "603c9aeaf1b8b12b8c4a22a5",
+    "ingredients": [
+      { "ingredient": "670f97ad132b8078e8c1c745", "measure": "gram", "quantity": 200 },
+      { "ingredient": "670f97ad132b8078e8c1c673", "measure": "unit", "quantity": 4 },
+      { "ingredient": "670f97ad132b8078e8c1c681", "measure": "gram", "quantity": 50 }
+    ],
+    "type": "Dinner",
+    "isVegan": false,
+    "isVegetarian": false,
+    "instructions": "Cook pasta, fry bacon, mix with eggs, parmesan, and pepper. Toss with pasta."
+  },
+  {
+    "name": "Pancakes",
+    "image": "https://www.cookingclassy.com/wp-content/uploads/2019/09/pancakes-20.jpg",
+    "createdBy": "603c9aeaf1b8b12b8c4a22a6",
+    "ingredients": [
+      { "ingredient": "670f97ad132b8078e8c1c63c", "measure": "cup", "quantity": 1.5 },
+      { "ingredient": "670f97ad132b8078e8c1c652", "measure": "unit", "quantity": 2 },
+      { "ingredient": "670f97ad132b8078e8c1c640", "measure": "cup", "quantity": 1 },
+      { "ingredient": "670f97ad132b8078e8c1c646", "measure": "teaspoon", "quantity": 2 }
+    ],
+    "type": "Breakfast",
+    "isVegan": false,
+    "isVegetarian": true,
+    "instructions": "Mix flour, eggs, milk, and baking powder. Fry on a pan until golden brown."
+  },
+  {
+    "name": "Vegan Lentil Soup",
+    "image": "https://cookieandkate.com/images/2020/01/best-lentil-soup-recipe-3-768x1152.jpg",
+    "createdBy": "603c9aeaf1b8b12b8c4a22a7",
+    "ingredients": [
+      { "ingredient": "670f97ad132b8078e8c1c6ca", "measure": "cup", "quantity": 1.5 },
+      { "ingredient": "670f97ad132b8078e8c1c6d4", "measure": "cup", "quantity": 1 },
+      { "ingredient": "670f97ad132b8078e8c1c6a6", "measure": "piece", "quantity": 2 }
+    ],
+    "type": "Lunch",
+    "isVegan": true,
+    "isVegetarian": true,
+    "instructions": "Cook lentils with water, add chopped vegetables and simmer for 45 minutes."
+  },
+  {
+    "name": "Chicken Caesar Salad",
+    "image": "https://www.simplyrecipes.com/thmb/OcLtJqKx5WrWqNBpXfMkecNzh_A=/2000x1500/smart/filters:no_upscale()/Simply-Recipes-Chicken-Caesar-Salad-LEAD-8-eab59b5e0427436fbcf4e08ed4bfdf3e.jpg",
+    "createdBy": "603c9aeaf1b8b12b8c4a22a8",
+    "ingredients": [
+      { "ingredient": "670f97ad132b8078e8c1c693", "measure": "piece", "quantity": 1 },
+      { "ingredient": "670f97ad132b8078e8c1c7b0", "measure": "cup", "quantity": 0.5 },
+      { "ingredient": "670f97ad132b8078e8c1c7aa", "measure": "cup", "quantity": 0.5 }
+    ],
+    "type": "Lunch",
+    "isVegan": false,
+    "isVegetarian": false,
+    "instructions": "Grill chicken, toss with lettuce, parmesan, and Caesar dressing."
+  },
+  {
+    "name": "Vegetarian Tacos",
+    "image": "https://cookieandkate.com/images/2020/02/best-vegetarian-tacos-recipe-2-768x1152.jpg",
+    "createdBy": "603c9aeaf1b8b12b8c4a22a9",
+    "ingredients": [
+      { "ingredient": "670f97ad132b8078e8c1c7d5", "measure": "cup", "quantity": 2 },
+      { "ingredient": "670f97ad132b8078e8c1c63e", "measure": "tablespoon", "quantity": 2 },
+      { "ingredient": "670f97ad132b8078e8c1c6c9", "measure": "teaspoon", "quantity": 1 }
+    ],
+    "type": "Dinner",
+    "isVegan": false,
+    "isVegetarian": true,
+    "instructions": "Sauté veggies, add beans, and serve on tortillas with your favorite toppings."
+  },
+  {
+    "name": "Classic Burger",
+    "image": "https://www.thespruceeats.com/thmb/EbOjwqvZw7pLJGhwqMybxdZ0hcU=/1333x1000/smart/filters:no_upscale()/classic-burger-recipe-336245_horiz-5b5e91e2c9e77c0050383cdd.jpg",
+    "createdBy": "603c9aeaf1b8b12b8c4a22aa",
+    "ingredients": [
+      { "ingredient": "670f97ad132b8078e8c1c67c", "measure": "gram", "quantity": 500 },
+      { "ingredient": "670f97ad132b8078e8c1c658", "measure": "unit", "quantity": 1 },
+      { "ingredient": "670f97ad132b8078e8c1c61f", "measure": "piece", "quantity": 2 }
+    ],
+    "type": "Lunch",
+    "isVegan": false,
+    "isVegetarian": false,
+    "instructions": "Grill beef patties, toast buns, and assemble with toppings of choice."
+  },
+  {
+    "name": "Greek Salad",
+    "image": "https://www.acouplecooks.com/wp-content/uploads/2020/05/Greek-Salad-007.jpg",
+    "createdBy": "603c9aeaf1b8b12b8c4a22ab",
+    "ingredients": [
+      { "ingredient": "670f97ad132b8078e8c1c6dc", "measure": "cup", "quantity": 1 },
+      { "ingredient": "670f97ad132b8078e8c1c6d0", "measure": "piece", "quantity": 2 },
+      { "ingredient": "670f97ad132b8078e8c1c63e", "measure": "tablespoon", "quantity": 2 }
+    ],
+    "type": "Any",
+    "isVegan": false,
+    "isVegetarian": true,
+    "instructions": "Combine all ingredients in a bowl, drizzle with olive oil, and mix."
+  },
+  {
+    "name": "Baked Salmon",
+    "image": "https://www.spendwithpennies.com/wp-content/uploads/2019/05/Baked-Salmon-SpendWithPennies-3.jpg",
+    "createdBy": "603c9aeaf1b8b12b8c4a22ac",
+    "ingredients": [
+      { "ingredient": "670f97ad132b8078e8c1c755", "measure": "gram", "quantity": 200 },
+      { "ingredient": "670f97ad132b8078e8c1c65b", "measure": "teaspoon", "quantity": 1 },
+      { "ingredient": "670f97ad132b8078e8c1c67d", "measure": "teaspoon", "quantity": 1 }
+    ],
+    "type": "Dinner",
+    "isVegan": false,
+    "isVegetarian": false,
+    "instructions": "Season salmon with garlic powder and salt. Bake at 180°C for 12 minutes."
+  },
+  {
+    "name": "Eggplant Parmesan",
+    "image": "https://cookieandkate.com/images/2020/10/eggplant-parmesan-recipe-1-768x1152.jpg",
+    "createdBy": "603c9aeaf1b8b12b8c4a22ad",
+    "ingredients": [
+      { "ingredient": "670f97ad132b8078e8c1c734", "measure": "piece", "quantity": 1 },
+      { "ingredient": "670f97ad132b8078e8c1c7a6", "measure": "cup", "quantity": 1 },
+      { "ingredient": "670f97ad132b8078e8c1c63c", "measure": "cup", "quantity": 2 }
+    ],
+    "type": "Dinner",
+    "isVegan": false,
+    "isVegetarian": true,
+    "instructions": "Coat eggplant slices in breadcrumbs, layer with cheese and sauce, and bake."
+  },
+  {
+    "name": "Beef Stew",
+    "image": "https://www.simplyrecipes.com/thmb/zVzDW57vQ4yvhG7lNxlbkM52EzA=/2000x1500/smart/filters:no_upscale()/Simply-Recipes-Beef-Stew-LEAD-2-7b576abe9b94498ca9302f8616d0079e.jpg",
+    "createdBy": "603c9aeaf1b8b12b8c4a22ae",
+    "ingredients": [
+      { "ingredient": "670f97ad132b8078e8c1c720", "measure": "gram", "quantity": 500 },
+      { "ingredient": "670f97ad132b8078e8c1c66c", "measure": "piece", "quantity": 3 },
+      { "ingredient": "670f97ad132b8078e8c1c63e", "measure": "tablespoon", "quantity": 2 }
+    ],
+    "type": "Dinner",
+    "isVegan": false,
+    "isVegetarian": false,
+    "instructions": "Brown beef, add veggies, broth, and simmer for 2 hours until tender."
+  },
+  {
+    "name": "Lemon Chicken",
+    "image": "https://www.simplyrecipes.com/thmb/4rx9GzxAt2OphGHglgXDEWmY3mI=/2000x1125/smart/filters:no_upscale()/Simply-Recipes-Lemon-Chicken-LEAD-7-0612bcd0dbce43849766b03150070fbe.jpg",
+    "createdBy": "603c9aeaf1b8b12b8c4a22af",
+    "ingredients": [
+      { "ingredient": "670f97ad132b8078e8c1c693", "measure": "piece", "quantity": 4 },
+      { "ingredient": "670f97ad132b8078e8c1c675", "measure": "unit", "quantity": 2 },
+      { "ingredient": "670f97ad132b8078e8c1c63e", "measure": "tablespoon", "quantity": 1 }
+    ],
+    "type": "Dinner",
+    "isVegan": false,
+    "isVegetarian": false,
+    "instructions": "Sear chicken in a pan, add lemon juice, and cook until chicken is done."
+  },
+  {
+    "name": "Vegan Chili",
+    "image": "https://cookieandkate.com/images/2019/10/vegetarian-chili-recipe-1-768x1152.jpg",
+    "createdBy": "603c9aeaf1b8b12b8c4a22b0",
+    "ingredients": [
+      { "ingredient": "670f97ad132b8078e8c1c6d8", "measure": "cup", "quantity": 1 },
+      { "ingredient": "670f97ad132b8078e8c1c64e", "measure": "can", "quantity": 1 },
+      { "ingredient": "670f97ad132b8078e8c1c6ca", "measure": "can", "quantity": 1 }
+    ],
+    "type": "Lunch",
+    "isVegan": true,
+    "isVegetarian": true,
+    "instructions": "Cook beans, tomatoes, and spices together in a large pot for 1 hour."
+  },
+  {
+    "name": "Garlic Butter Shrimp",
+    "image": "https://www.simplyrecipes.com/thmb/CMVi9UQkzP6Q2tV9t0TXwZmGqs4=/2000x1125/smart/filters:no_upscale()/Simply-Recipes-Garlic-Shrimp-LEAD-3-fc5c913f0db345dba9b748546c064080.jpg",
+    "createdBy": "603c9aeaf1b8b12b8c4a22b1",
+    "ingredients": [
+      { "ingredient": "670f97ad132b8078e8c1c67e", "measure": "gram", "quantity": 300 },
+      { "ingredient": "670f97ad132b8078e8c1c641", "measure": "cloves", "quantity": 4 },
+      { "ingredient": "670f97ad132b8078e8c1c642", "measure": "tablespoon", "quantity": 3 }
+    ],
+    "type": "Dinner",
+    "isVegan": false,
+    "isVegetarian": false,
+    "instructions": "Sauté shrimp in butter and garlic for 5 minutes. Serve with lemon."
+  },
+  {
+    "name": "Vegetarian Lasagna",
+    "image": "https://www.simplyrecipes.com/thmb/QzTjMaWjpQmrFm_PBYeE8-yxgK4=/2000x1125/smart/filters:no_upscale()/Simply-Recipes-Vegetarian-Lasagna-LEAD-4-91f693032d3543eb9f5f706fc4d1c37b.jpg",
+    "createdBy": "603c9aeaf1b8b12b8c4a22b2",
+    "ingredients": [
+      { "ingredient": "670f97ad132b8078e8c1c746", "measure": "cup", "quantity": 2 },
+      { "ingredient": "670f97ad132b8078e8c1c7b0", "measure": "cup", "quantity": 1 },
+      { "ingredient": "670f97ad132b8078e8c1c7b3", "measure": "piece", "quantity": 3 }
+    ],
+    "type": "Dinner",
+    "isVegan": false,
+    "isVegetarian": true,
+    "instructions": "Layer pasta with ricotta, veggies, and cheese. Bake at 180°C for 30 minutes."
+  }
+]
