@@ -10,7 +10,7 @@ const verifyToken = require("../middlewares/auth.middleware")
 router.post("/signup", async (req, res, next) => {
 
   console.log(req.body)
-  const { username, email, password } = req.body
+  const { username, email, password, image } = req.body
 
   // 1. Los campos son obligatorios
   if (!username | !email | !password) {
@@ -54,7 +54,8 @@ router.post("/signup", async (req, res, next) => {
      await User.create({
       username,
       email,
-      password: hashPassword
+      password: hashPassword,
+      image
      })
      res.sendStatus(201)
 
