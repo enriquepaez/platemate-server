@@ -8,7 +8,7 @@ router.post("/", async (req, res, next) => {
 
   try {
     await DailyMeal.create({
-      date: req.body.date,
+      day: req.body.day,
       createdBy: req.body.createdBy,
       breakfast: req.body.breakfast,
       lunch: req.body.lunch,
@@ -39,12 +39,28 @@ router.get("/:dailyMealId", async (req, res, next) => {
   }
 })
 
+// GET "/api/dailyMeal" - Returns daily meals by date
+router.get("/", async (req, res, next) => {
+  const { day } = req.query
+
+  try {
+    const response = await DailyMeal.findOne({ day })
+    .populate("createdBy breakfast lunch dinner")
+
+    res.status(200).json(response)
+
+  } catch (error) {
+    console.log(error);
+    next(error);
+  }
+});
+
 // PUT "/api/dailyMeal" - Updates all details of a daily meal
 router.put("/:dailyMealId", async (req, res, next) => {
 
   try {
     await DailyMeal.findByIdAndUpdate(req.params.dailyMealId, {
-      date: req.body.date,
+      day: req.body.day,
       createdBy: req.body.createdBy,
       breakfast: req.body.breakfast,
       lunch: req.body.lunch,

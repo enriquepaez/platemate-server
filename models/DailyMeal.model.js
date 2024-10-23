@@ -1,7 +1,7 @@
 const { Schema, model } = require("mongoose");
 
 const dailyMealSchema = new Schema({
-  date: { type: Date, required: true },
+  day: { type: String, required: true },
 	createdBy: { type: Schema.Types.ObjectId, ref: "User" },
 	breakfast: { type: Schema.Types.ObjectId, ref: "Recipe", default: null},
 	lunch: { type: Schema.Types.ObjectId, ref: "Recipe", default: null },

@@ -21,7 +21,10 @@ router.put("/", verifyToken, async (req, res, next) => {
 
   try {
     await User.findByIdAndUpdate(req.payload._id, {
-      username: req.body.username
+      username: req.body.username,
+      image: req.body.image,
+      email: req.body.email,
+      password: req.body.password,
     }, { new: true })
     res.status(201).json({ message: "User updated successfully" })
 

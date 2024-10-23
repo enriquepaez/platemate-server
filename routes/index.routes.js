@@ -19,4 +19,7 @@ router.use("/recipe", recipeRouter)
 const dailyMealRouter = require("./dailyMeal.routes")
 router.use("/dailymeal", dailyMealRouter)
 
+const uploadRoutes = require("./upload.routes");
+router.use("/upload", uploadRoutes);
+
 module.exports = router;
