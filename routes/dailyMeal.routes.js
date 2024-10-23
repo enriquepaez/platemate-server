@@ -24,12 +24,19 @@ router.post("/", async (req, res, next) => {
   }
 })
 
-// GET "/api/dailyMeal" - Returns a daily meal by id
-router.get("/:dailyMealId", async (req, res, next) => {
+// GET "/api/dailyMeal" - Returns all daily meals
+router.get("/", async (req, res, next) => {
 
   try {
-    const response = await DailyMeal.findById(req.params.dailyMealId)
-    .populate("createdBy breakfast lunch dinner")
+    const response = await DailyMeal.find()
+    .populate("createdBy")
+    .populate({
+      path: "breakfast lunch dinner",
+      populate: {
+        path: "ingredients.ingredient",
+        model: "Ingredient"
+      },
+    })
 
     res.status(200).json(response)
 
@@ -82,6 +89,19 @@ router.delete("/:dailyMealId", async (req, res, next) => {
   try {
     await DailyMeal.findByIdAndDelete(req.params.dailyMealId)
     res.status(200).json({ message: "Daily meal deleted successfully" })
+
+  } catch (error) {
+    console.log(error)
+    next(error)
+  }
+})
+
+// DELETE "/api/dailyMeal" - Delete all meals
+router.delete("/", async (req, res, next) => {
+
+  try {
+    await DailyMeal.deleteMany()
+    res.status(200).json({ message: "All daily meals deleted successfully" })
 
   } catch (error) {
     console.log(error)
