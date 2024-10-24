@@ -2,14 +2,15 @@ const express = require("express")
 const router = express.Router()
 const DailyMeal = require("../models/DailyMeal.model")
 const { trusted } = require("mongoose")
+const verifyToken = require("../middlewares/auth.middleware")
 
 // POST "/api/dailyMeal" - Creates a new daily meal
-router.post("/", async (req, res, next) => {
+router.post("/", verifyToken, async (req, res, next) => {
 
   try {
     await DailyMeal.create({
       day: req.body.day,
-      createdBy: req.body.createdBy,
+      createdBy: req.payload._id,
       breakfast: req.body.breakfast,
       lunch: req.body.lunch,
       dinner: req.body.dinner,
@@ -46,8 +47,8 @@ router.get("/", async (req, res, next) => {
   }
 })
 
-// GET "/api/dailyMeal" - Returns daily meals by date
-router.get("/", async (req, res, next) => {
+// GET "/api/dailyMeal" - Returns daily meals by a specific day
+router.get("/day", async (req, res, next) => {
   const { day } = req.query
 
   try {
@@ -63,12 +64,12 @@ router.get("/", async (req, res, next) => {
 });
 
 // PUT "/api/dailyMeal" - Updates all details of a daily meal
-router.put("/:dailyMealId", async (req, res, next) => {
+router.put("/:dailyMealId", verifyToken, async (req, res, next) => {
 
   try {
     await DailyMeal.findByIdAndUpdate(req.params.dailyMealId, {
       day: req.body.day,
-      createdBy: req.body.createdBy,
+      createdBy: req.payload._id,
       breakfast: req.body.breakfast,
       lunch: req.body.lunch,
       dinner: req.body.dinner,

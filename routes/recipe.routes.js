@@ -1,15 +1,16 @@
 const express = require("express")
 const router = express.Router()
 const Recipe = require("../models/Recipe.model")
+const verifyToken = require("../middlewares/auth.middleware")
 
 // POST "/api/recipe" - Creates a new recipe
-router.post("/", async (req, res, next) => {
+router.post("/", verifyToken, async (req, res, next) => {
 
   try {
     await Recipe.create({
       name: req.body.name,
       image: req.body.image,
-      createdBy: req.body.createdBy,
+      createdBy: req.payload._id,
       creationDate: req.body.creationDate,
       ingredients: req.body.ingredients,
       type: req.body.type,
@@ -74,13 +75,13 @@ router.get("/:recipeId", async (req, res, next) => {
 })
 
 // PUT "/api/recipe/:recipeId" - Updates all details of a recipe
-router.put("/:recipeId", async (req, res, next) => {
+router.put("/:recipeId", verifyToken, async (req, res, next) => {
 
   try {
     await Recipe.findByIdAndUpdate(req.params.recipeId, {
       name: req.body.name,
       image: req.body.image,
-      createdBy: req.body.createdBy,
+      createdBy: req.payload._id,
       creationDate: req.body.creationDate,
       ingredients: req.body.ingredients,
       type: req.body.type,
