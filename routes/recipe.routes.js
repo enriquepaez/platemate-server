@@ -34,7 +34,7 @@ router.get("/", async (req, res, next) => {
 
   try {
     const response = await Recipe.find()
-    .populate("createdBy ingredients.ingredient")
+    .populate("ingredients.ingredient createdBy")
 
     res.status(200).json(response)
 
@@ -64,7 +64,7 @@ router.get("/:recipeId", async (req, res, next) => {
 
   try {
     const response = await Recipe.findById(req.params.recipeId)
-    .populate("createdBy ingredients.ingredient")
+    .populate("ingredients.ingredient createdBy")
 
     res.status(200).json(response)
 
@@ -81,7 +81,7 @@ router.put("/:recipeId", verifyToken, async (req, res, next) => {
     await Recipe.findByIdAndUpdate(req.params.recipeId, {
       name: req.body.name,
       image: req.body.image,
-      createdBy: req.payload._id,
+      createdBy: req.body.createdBy,
       creationDate: req.body.creationDate,
       ingredients: req.body.ingredients,
       type: req.body.type,

@@ -97,11 +97,11 @@ router.delete("/:dailyMealId", async (req, res, next) => {
   }
 })
 
-// DELETE "/api/dailyMeal" - Delete all meals
-router.delete("/", async (req, res, next) => {
+// DELETE "/api/dailyMeal" - Delete all meals created by user
+router.delete("/", verifyToken, async (req, res, next) => {
 
   try {
-    await DailyMeal.deleteMany()
+    await DailyMeal.deleteMany({ createdBy: req.payload._id })
     res.status(200).json({ message: "All daily meals deleted successfully" })
 
   } catch (error) {
