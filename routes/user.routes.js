@@ -16,7 +16,7 @@ router.get("/", verifyToken, async (req, res, next) => {
   }
 })
 
-// PATCH "/api/user/:userId" - Updates only user´s username
+// PUT "/api/user/:userId" - Updates user´s information
 router.put("/", verifyToken, async (req, res, next) => {
 
   try {
@@ -27,19 +27,6 @@ router.put("/", verifyToken, async (req, res, next) => {
       password: req.body.password,
     }, { new: true })
     res.status(201).json({ message: "User updated successfully" })
-
-  } catch (error) {
-    console.log(error)
-    next(error)
-  }
-})
-
-// DELETE "/api/user/:userId" - Deletes a single user
-router.delete("/", verifyToken, async (req, res, next) => {
-
-  try {
-    await User.findByIdAndDelete(req.payload._id)
-    res.status(200).json({ message: "User deleted successfully" })
 
   } catch (error) {
     console.log(error)

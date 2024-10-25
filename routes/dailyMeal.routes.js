@@ -25,11 +25,11 @@ router.post("/", verifyToken, async (req, res, next) => {
   }
 })
 
-// GET "/api/dailyMeal" - Returns all daily meals
-router.get("/", async (req, res, next) => {
+// GET "/api/dailyMeal" - Returns all daily meals from a user
+router.get("/", verifyToken, async (req, res, next) => {
 
   try {
-    const response = await DailyMeal.find()
+    const response = await DailyMeal.find({ createdBy: req.payload._id })
     .populate("createdBy")
     .populate({
       path: "breakfast lunch dinner",
@@ -47,12 +47,12 @@ router.get("/", async (req, res, next) => {
   }
 })
 
-// GET "/api/dailyMeal" - Returns daily meals by a specific day
-router.get("/day", async (req, res, next) => {
+// GET "/api/dailyMeal" - Returns daily meals from a user by a specific day
+router.get("/day", verifyToken, async (req, res, next) => {
   const { day } = req.query
 
   try {
-    const response = await DailyMeal.findOne({ day })
+    const response = await DailyMeal.findOne({ day, createdBy: req.payload._id })
     .populate("createdBy breakfast lunch dinner")
 
     res.status(200).json(response)
@@ -64,7 +64,7 @@ router.get("/day", async (req, res, next) => {
 });
 
 // PUT "/api/dailyMeal" - Updates all details of a daily meal
-router.put("/:dailyMealId", verifyToken, async (req, res, next) => {
+router.put("/:dailyMealId", async (req, res, next) => {
 
   try {
     await DailyMeal.findByIdAndUpdate(req.params.dailyMealId, {
@@ -77,19 +77,6 @@ router.put("/:dailyMealId", verifyToken, async (req, res, next) => {
 
     console.log(req.body)
     res.status(201).json({ message: "Daily meal updated successfully" })
-
-  } catch (error) {
-    console.log(error)
-    next(error)
-  }
-})
-
-// DELETE "/api/dailyMeal" - Deletes a single daily meal
-router.delete("/:dailyMealId", async (req, res, next) => {
-
-  try {
-    await DailyMeal.findByIdAndDelete(req.params.dailyMealId)
-    res.status(200).json({ message: "Daily meal deleted successfully" })
 
   } catch (error) {
     console.log(error)
